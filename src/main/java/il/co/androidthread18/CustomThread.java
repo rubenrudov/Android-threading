@@ -1,7 +1,7 @@
 package il.co.androidthread18;
 import android.os.Handler;
 import android.os.Message;
-
+// Ruben Rudov
 public class CustomThread extends  Thread {
     int num;
     boolean
