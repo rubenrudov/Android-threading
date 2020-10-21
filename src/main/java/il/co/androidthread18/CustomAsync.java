@@ -4,7 +4,7 @@ import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
+// Ruben Rudov
 public class CustomAsync extends AsyncTask<Integer,Integer,String> {
     @SuppressLint("StaticFieldLeak")
     public TextView timeLeftTv;
