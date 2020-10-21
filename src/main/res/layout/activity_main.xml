@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    tools:ignore="ScrollViewCount">
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
@@ -49,22 +48,31 @@
 
     <Button
         android:id="@+id/startBtn"
-        android:layout_width="211dp"
+        android:layout_width="100dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="180dp"
-        android:text="play"
+        android:layout_marginBottom="176dp"
+        android:background="@drawable/custom_button"
+        android:textStyle="bold"
+        android:text="הפעל"
+        android:textColor="#FFF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.295"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/stopBtn"
-        android:layout_width="209dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="112dp"
-        android:text="stop"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="176dp"
+        android:background="@drawable/custom_button"
+        android:textStyle="bold"
+        android:text="עצור"
+        android:textColor="#FFF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
