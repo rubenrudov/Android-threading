@@ -7,10 +7,10 @@ import android.widget.TextView;
 
 public class CustomAsync extends AsyncTask<Integer,Integer,String> {
     @SuppressLint("StaticFieldLeak")
-    private TextView timeLeftTv;
+    public TextView timeLeftTv;
     @SuppressLint("StaticFieldLeak")
-    private ProgressBar progressBar;
-    private boolean isRunning = true;
+    public ProgressBar progressBar;
+    public boolean isRunning = true;
     int num;
     CustomAsync(TextView timeLeftTv, ProgressBar progressBar)
     {
@@ -45,7 +45,7 @@ public class CustomAsync extends AsyncTask<Integer,Integer,String> {
             }
 
         }
-        return "timer finished " + num;
+        return "בוצע";
     }
 
     @Override
