@@ -1,48 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context=".MainActivity"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
     android:orientation="vertical"
     tools:ignore="ScrollViewCount">
+
     <TextView
-        android:text="א סינכרוני Thread"
-        android:textDirection="rtl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginBottom="544dp"
+        android:text="א סינכרוני Thread"
+        android:textDirection="rtl"
         android:textSize="30sp"
-    />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/tv"
         android:layout_width="122dp"
         android:layout_height="90dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30sp"
+        android:layout_marginBottom="320dp"
         android:gravity="center"
         android:textColor="#fa0b19"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
-        <ProgressBar
-            android:id="@+id/progress"
-            android:layout_width="match_parent"
-            android:layout_height="335dp"
-            android:indeterminateOnly="false"
-            android:progressDrawable="@drawable/circle"
-            android:padding="45dp"
-            />
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:layout_marginBottom="196dp"
+        android:indeterminateOnly="false"
+        android:padding="45dp"
+        android:progressDrawable="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/startBtn"
-            android:text="play"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/stopBtn"
-            android:text="stop"
-            />
-</LinearLayout>
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="211dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="180dp"
+        android:text="play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="209dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="112dp"
+        android:text="stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
