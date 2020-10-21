@@ -6,4 +6,4 @@ Including:
 - Resources
 
 
-### Thanks for reviewin, Ruben
+### Thanks for reviewing, Ruben
