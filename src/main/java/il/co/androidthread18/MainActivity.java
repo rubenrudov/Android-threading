@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
+// Ruben Rudov
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView timeLeft;
     ProgressBar progressBar;
