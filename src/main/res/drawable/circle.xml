@@ -6,7 +6,7 @@
             android:thicknessRatio="15"
             android:useLevel="false"
         >
-            <solid android:color="#466"/>
+            <solid android:color="@color/colorAccent"/>
         </shape>
     </item>
     <item>
@@ -19,7 +19,7 @@
                 android:thicknessRatio="15"
                 android:useLevel="true"
                 >
-                <solid android:color="@color/colorAccent"/>
+                <solid android:color="@color/gery"/>
             </shape>
         </rotate>
     </item>
