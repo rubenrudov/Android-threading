@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
+// Ruben Rudov
 public class Main2Activity extends AppCompatActivity implements View.OnClickListener {
 
     TextView timeLeft, title;
