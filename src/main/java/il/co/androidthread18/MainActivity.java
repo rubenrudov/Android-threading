@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        timeLeft = findViewById(R.id.tv);
+        timeLeft = findViewById(R.id.timeLeft);
         startBtn = findViewById(R.id.startBtn);
         startBtn.setOnClickListener(this);
         stopBtn = findViewById(R.id.stopBtn);
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         stopBtn.setEnabled(false);
         progressBar = findViewById(R.id.progress);
         progressBar.setMax(100);
-        progressBar.setProgress(0);
+        progressBar.setProgress(100);
     }
 
     @Override
@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             startBtn.setEnabled(false);
             stopBtn.setEnabled(true);
-            asyncTask.isRun = true;
+            asyncTask.isRunning = true;
         }
         else if(stopBtn == v)
         {
-            asyncTask.isRun = false;
+            asyncTask.isRunning = false;
             startBtn.setEnabled(true);
             stopBtn.setEnabled(false);
         }
