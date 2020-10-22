@@ -2,7 +2,7 @@
 
 Including:
 - Both async task and handler activities
-- UI/UX design for each view
+- UI/UX design for the activities
 - Resources
 - Menifest
 
