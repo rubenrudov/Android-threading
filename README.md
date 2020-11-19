@@ -5,5 +5,3 @@ Including:
 - UI/UX design for the activities
 - Resources
 - Menifest
-
-### Thanks for reviewing, Ruben
